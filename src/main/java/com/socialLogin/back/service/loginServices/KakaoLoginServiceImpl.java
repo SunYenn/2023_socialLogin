@@ -44,18 +44,14 @@ public class KakaoLoginServiceImpl implements SocialLoginService {
 
     @Override
     public SocialAuthResponse getAccessToken(String authorizationCode) {
-        ResponseEntity<?> response = kakaoAuthApi.getAccessToken(
+        SocialAuthResponse response = kakaoAuthApi.getAccessToken(
                 kakaoAppKey,
                 kakaoGrantType,
                 kakaoRedirectUri,
                 authorizationCode
         );
 
-        return new Gson()
-                .fromJson(
-                        String.valueOf(response.getBody())
-                        , SocialAuthResponse.class
-                );
+        return response;
     }
 
     @Override
