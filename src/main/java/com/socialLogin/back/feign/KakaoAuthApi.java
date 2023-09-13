@@ -3,7 +3,6 @@ package com.socialLogin.back.feign;
 import com.socialLogin.back.config.FeignConfig;
 import com.socialLogin.back.model.SocialAuthResponse;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
