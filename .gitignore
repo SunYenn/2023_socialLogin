@@ -35,8 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-### git rm -r --cached src/main/resources/application.properties ###
-### git add . ###
-### git commit "rm cached" ###
-**/application.properties
